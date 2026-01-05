@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 1. Element Selector */
+        p{
+            color: green;
+        }
+
+        /* 2. Class Selector */
+        .highlight{
+            background-color: yellow;
+            padding: 5px;
+        }
+        /* 3. ID Selector */
+        #header{
+            background: blue;
+            color: white;
+            padding: 10px;}
+        /* 1. Paeudo-class :hover */
+        p.hover{
+            color: red;
+            background-color: lightgray;
+            cursor: pointer;
+        }
+        /* 2. Attribute Selector */
+        input[type="text"]{
+            border: 2px solid orange;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        input[type="text"]:focus {
+            border: 2px solid purple;
+            padding: 8px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+        <h1>ตัวอย่าง CSS Selectorsr</h1>
+        <!-- Element Selector-->
+         <p>
+            ข้อความนี้ถูกจัดสีด้วย Element Selector (p { color: green; })
+         </p>
+        <!-- Class Selector-->
+            <p class="highlight">
+                ข้อความนี้ถูกจัดสีด้วย Class Selector (.highlight { background-color: yellow; })
+            </p>
+        <!-- ID Selector-->
+            <div id="header">
+                ข้อความนี้ถูกจัดสีด้วย ID Selector (#header { background: blue; color: white; })
+            </div>
+
+            
+
+</body>
+</html>
