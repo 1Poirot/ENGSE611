@@ -1,0 +1,22 @@
+.flex-box {
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+.card-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    width: 260px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 8px  rgba(0, 0, 0, 0.1);
+}
+
+.item p {
+    font-size: 14px;
+    color: #000000;
+}
