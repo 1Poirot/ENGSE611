@@ -1,0 +1,42 @@
+/* Element Selector */
+body {
+    font-family: serif;
+    background-color: #f2f6ff;
+    margin: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+p {
+    color: #34495e;
+    text-align: left;
+}
+
+/* Class Selector */
+.highlight {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* ID Selector */
+#main-header {
+    background-color: #4a69bd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    color: #1e3799;
+}
+
+footer {
+    text-align: center;
+    background-color: #dcdde1;
+    padding: 15px;
+    margin-top: 20px;
+}
