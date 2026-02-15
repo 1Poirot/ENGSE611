@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+
+<style>
+    /* --------------- STYLE FOR DEMO ---------------- */
+    .block-example div {
+        display: block;
+        padding: 10px;
+        background: lightblue;
+        margin-bottom: 5px;
+    }
+
+    .inline-example span {
+        display: inline;
+        padding: 10px;
+        background: lightgreen;
+        margin-right: 5px;
+    }
+    .inline-block-example div {
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        background: lightcoral;
+        margin-right: 10px;
+        text-align: center;
+        line-height: 40px;
+        border: 1px solid rgb(201, 230, 134);
+    }
+
+    .box {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #a0d8ff;
+    border: 2px solid #0077aa;
+    font-size: 20px;
+  }
+
+  /* ซ่อนแบบหายไปจาก layout */
+  .none {
+    display: none;
+  }
+
+  /* ซ่อนแต่ยังจองพื้นที่อยู่ */
+  .hidden {
+    visibility: hidden;
+  }
+</style>
+<body>
+    <h1>ตัวอย่าง ของ Display</h1>
+    <h2>แบบที่ 1 : display: block;</h2>
+    <div class="block-example">
+        <div>บล็อกที่ 1</div>
+        <div>บล็อกที่ 2</div>
+        <div>บล็อกที่ 3</div>
+    </div>
+    <h4>________________________________________________________________________________________________________________________________________</h4>
+    <h2>แบบที่ 2 : display: inline;</h2>
+    <div class="inline-example">
+        <span>อินไลน์ที่ 1</span>
+        <span>อินไลน์ที่ 2</span>
+        <span>อินไลน์ที่ 3</span>
+    </div>
+    <h4>________________________________________________________________________________________________________________________________________</h4>
+    <h2>แบบที่ 3 : display: inline-block;</h2>
+    <div class="inline-block-example">
+        <div>อินไลน์บล็อกที่ 1</div>
+        <div>อินไลน์บล็อกที่ 2</div>
+        <div>อินไลน์บล็อกที่ 3</div>
+    </div>
+
+    <h2>แสดงผลปกติ</h2>
+<div class="box">Box 1 (ปกติ)</div>
+
+<h2>display: none; → หายไปจากหน้าเว็บ</h2>
+<div class="box none">Box 2 (display:none หายไป)</div>
+<div class="box">Box 3 (จะชิดขึ้นมาทันทีเพราะ Box 2 หายไป)</div>
+
+<h2>visibility: hidden; → ซ่อน แต่ยังคงพื้นที่</h2>
+<div class="box hidden">Box 4 (visibility:hidden ซ่อนแต่ยังคงขนาด)</div>
+<div class="box">Box 5 (ไม่ขยับขึ้น เพราะ Box 4 ยังมีพื้นที่อยู่)</div>
+</body>
+</html>

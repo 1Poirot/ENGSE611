@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile</title>
+
+    <style>
+    body {
+        margin: 0;
+        font-family: tahoma,sans-serif;
+        background: #f5f5f5;
+    }
+    header {
+        background: rgb(54, 141, 192);
+        color: #ffff;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    nav a{
+        background: hsl(208, 100%, 79%);
+        color: #000000;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    main {
+        padding: 15px;
+    }
+    .card {
+        background: #ffff;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px #03060e;
+    }
+    footer{
+        background: #dddd;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+    @media (min-width: 1024px) {
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header{
+            padding: 30px 40px;
+
+        }
+        main {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>my website</h1>
+        <p>เริ่มออกแบบจากมือถือ แล้วค่อยขยายสู่จอใหญ่</p>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">content</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <h3>แนวคิด mobile-First</h3>
+            <p>
+                เริ่มออกแบบและเขียนโค้ดสำหรับหน้าจอมือถือก่อน
+                จากนั้นจึงเพิ่มเงื้อนไขสำหรับหน้าจอที่ใหญ่ขึ้น
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>ข้อดี</h3>
+            <ul>
+                <li>เว็บไซต์โหลดเร็ว</li>
+                <li>เหมาะกับผู้ใช้มือถือ</li>
+                <li>โค้ดเป็นระเบียบ</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>แนวคิด mobile-First</h3>
+            <p>
+                เริ่มออกแบบและเขียนโค้ดสำหรับหน้าจอมือถือก่อน
+                จากนั้นจึงเพิ่มเงื้อนไขสำหรับหน้าจอที่ใหญ่ขึ้น
+            </p>
+        </div>
+    </main>
+<footer>
+    รายวิชา ENGSE611 การพัฒนาเว็บด้วยเทคโนโลยีสมัยใหม่
+</footer>
+    
+
+</body>
+</html>

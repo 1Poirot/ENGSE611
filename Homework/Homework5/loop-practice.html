@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Loop Practice</title>
+
+<style>
+
+body {
+    margin: 0;
+    background: #e9eef3;
+    font-family: monospace;
+    padding: 20px;
+}
+
+/* ปุ่ม Run */
+button {
+    background: #1eb6d8;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* กล่อง console */
+#output {
+    background: #0d0d0d;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    white-space: pre-line;
+    max-width: 500px;
+}
+
+</style>
+
+</head>
+<body>
+
+<button onclick="runCode()">Run Code</button>
+
+<div id="output"></div>
+
+<script>
+
+function runCode() {
+
+    let maxNumber = 10;
+    let result = "";
+
+    // 0 → maxNumber
+    for (let i = 0; i <= maxNumber; i++) {
+
+        let type = (i % 2 === 0) ? "(คู่)" : "(คี่)";
+        let text = i + " " + type;
+
+        console.log(text);
+        result += text + "\n";
+    }
+
+
+    // นับทีละ 2
+    for (let i = 0; i <= maxNumber; i += 2) {
+
+        let text = "นับทีละ 2: " + i;
+
+        console.log(text);
+        result += text + "\n";
+    }
+
+
+    // ถอยหลัง
+    for (let i = 10; i >= 0; i--) {
+
+        let text = "ถอยหลัง: " + i;
+
+        console.log(text);
+        result += text + "\n";
+    }
+
+    document.getElementById("output").innerText = result;
+}
+
+</script>
+
+</body>
+</html>
